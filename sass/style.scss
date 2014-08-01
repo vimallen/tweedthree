@@ -24,7 +24,7 @@ and Blueprint http://www.blueprintcss.org/
 
 /*	=Variables	*/
 
-$tweed-background: #bada55;
+$tweed-background: ivory;
 
 
 /*--------------------------------------------------------------
@@ -691,7 +691,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-10.3 Comments
+10.3 =Comments
 --------------------------------------------------------------*/
 .comment-content a {
 	word-wrap: break-word;
@@ -875,6 +875,10 @@ body	{
 		margin: 0 12px;
 }
 
+.site-header	{
+				text-align: center;
+}
+
 
 /*     =Media queries----------------------------------------- */
  
@@ -906,10 +910,6 @@ body	{
  
  
 @media only screen and (min-width: 1024px)/* 64em */ {
-	body	{
-	   			background-color: #baa;
-			}
- 
 }
  
  

@@ -88,7 +88,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #bada55;
+  background: ivory;
   /* Fallback for when there is no custom background color defined. */ }
 
 article,
@@ -602,7 +602,7 @@ a:active {
   display: none; }
 
 /*--------------------------------------------------------------
-10.3 Comments
+10.3 =Comments
 --------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word; }
@@ -752,14 +752,14 @@ object {
 body {
   margin: 0 12px; }
 
+.site-header {
+  text-align: center; }
+
 /*     =Media queries----------------------------------------- */
 @media only screen and (min-width: 600px) {
   body {
     width: 80%;
     margin: 0 auto; } }
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: #baa; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 1400px) {
