@@ -869,6 +869,13 @@ object {
 
 /*	=Layout	*/
 
+/* =Mobile styles	*/
+
+body	{
+		margin: 0 12px;
+}
+
+
 /*     =Media queries----------------------------------------- */
  
  
@@ -884,7 +891,10 @@ object {
  
 @media only screen and (min-width: 600px) /* 37.5em */ {
  
- 
+body	{
+		width:80%; 
+		margin: 0 auto;
+	} 
 }
  
  

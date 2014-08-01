@@ -748,7 +748,15 @@ object {
   *zoom: 1; }
 
 /*	=Layout	*/
+/* =Mobile styles	*/
+body {
+  margin: 0 12px; }
+
 /*     =Media queries----------------------------------------- */
+@media only screen and (min-width: 600px) {
+  body {
+    width: 80%;
+    margin: 0 auto; } }
 @media only screen and (min-width: 1024px) {
   body {
     background-color: #baa; } }
