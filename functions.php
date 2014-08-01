@@ -128,3 +128,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Replace 'Thank your for creating with WordPress' in Dashboard
+function wpse_edit_footer()
+{
+    add_filter( 'admin_footer_text', 'wpse_edit_text', 11 );
+}
+
+function wpse_edit_text($content) {
+    return "Built by Dave Allen Graphics";
+}
+add_action( 'admin_init', 'wpse_edit_footer' );
