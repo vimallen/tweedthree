@@ -139,3 +139,26 @@ function wpse_edit_text($content) {
     return "Built by Dave Allen Graphics";
 }
 add_action( 'admin_init', 'wpse_edit_footer' );
+
+
+	// Creates contact post type
+		register_post_type('contacts', array(
+		'label' => 'Contacts',
+		'public' => true,
+		'show_ui' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'recipes'),
+		'query_var' => true,
+		'supports' => array(
+		'title',
+		'editor',
+		'excerpt',
+		'trackbacks',
+		'custom-fields',
+		'comments',
+		'revisions',
+		'thumbnail',
+		'author',
+		'page-attributes',)
+		) );
