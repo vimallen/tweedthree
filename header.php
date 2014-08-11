@@ -24,7 +24,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="home page" /> </a>
+<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo-stweed-dev-01.png" alt="home page" /> </a>
 
 		<div class="site-branding">
 			<h1 class="site-title visuallyhidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
