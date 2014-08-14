@@ -10,8 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-<div class="grid grid-pad main" >
+		<main id="main" class="site-main grid" role="main">
 
 <?php
           $loop = new WP_Query(array('post_type' => 'contacts',
@@ -33,6 +32,8 @@ get_header(); ?>
 	<?php the_post_thumbnail(); ?> </a>
 
 <?php get_template_part( 'content', 'page' ); ?>
+</div><!--module-->
+	</div><!--col-->
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
