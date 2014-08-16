@@ -9,6 +9,12 @@
 
 
 get_header(); ?>
+ <script type="text/javascript">
+            jQuery(function() {
+    jQuery('.col-1-3').matchHeight();
+});
+            
+        </script>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main grid" role="main">
