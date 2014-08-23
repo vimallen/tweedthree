@@ -11,7 +11,7 @@
 get_header(); ?>
  <script type="text/javascript">
             jQuery(function() {
-    jQuery('.col-1-3').matchHeight();
+    jQuery('.module-contact').matchHeight();
 });
             
         </script>
