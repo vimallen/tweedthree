@@ -166,16 +166,4 @@ add_action( 'admin_init', 'wpse_edit_footer' );
 		'page-attributes',)
 		) );
 
-// http://www.faqoverflow.com/wordpress/7090.html. Removes p tags when adding to media library. Won't work if inserting images directly into a post.
 
-function filter_ptags_on_images($content)
-{
-    // do a regular expression replace...
-    // find all p tags that have just
-    // <p>maybe some white space<img all stuff up to /> then maybe whitespace </p>
-    // replace it with just the image tag...
-   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-}
-
-// we want it to be run after the autop stuff... 10 is default.
-add_filter('the_content', 'filter_ptags_on_images');
