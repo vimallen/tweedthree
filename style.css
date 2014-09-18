@@ -752,7 +752,16 @@ object {
 /* 		margin: 0 12px; */
 /* } */
 .site-header {
-  text-align: center; }
+  text-align: center;
+  background: url(images/bg-powerhouse.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 12em; }
+
+.site-header img {
+  margin-top: 2em; }
 
 .grid {
   background: gray;
@@ -766,7 +775,7 @@ object {
 /*     =Media queries----------------------------------------- */
 @media only screen and (min-width: 600px) {
   body {
-    width: 80%;
+    /* width:80%; */
     margin: 0 auto; } }
 @media only screen and (min-width: 768px) {
   [class='col-1-3'] {
