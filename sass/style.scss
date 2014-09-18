@@ -450,17 +450,21 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+	background-color: #eee;
+	margin-bottom: 4em;
+	padding: 1em 0.75em;
 }
 
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-left: 3em;
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin-right: 2em;
 }
 
 .main-navigation a {
@@ -475,6 +479,7 @@ a:active {
 	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+	background-color: #ada;
 }
 
 .main-navigation ul ul ul {
@@ -484,9 +489,11 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
+	background-color: #dad;
 }
 
 .main-navigation ul ul li {
+							background-color: #ada;
 
 }
 
@@ -494,6 +501,7 @@ a:active {
 }
 
 .main-navigation ul ul :hover > a {
+									background-color: pink;
 }
 
 .main-navigation ul ul a:hover {
