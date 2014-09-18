@@ -403,7 +403,8 @@ a:active {
   width: 100%;
   background-color: #eee;
   margin-bottom: 4em;
-  padding: 1em 0.75em; }
+  padding: 1em 0.75em;
+  position: relative; }
 
 .main-navigation ul {
   list-style: none;
@@ -426,7 +427,7 @@ a:active {
   top: 1.5em;
   left: -999em;
   z-index: 99999;
-  background-color: #ada; }
+  background-color: #eee; }
 
 .main-navigation ul ul ul {
   left: -999em;
@@ -434,13 +435,15 @@ a:active {
 
 .main-navigation ul ul a {
   width: 200px;
-  background-color: #dad; }
+  /* background-color: #dad; */
+  padding: 6px 10px; }
 
 .main-navigation ul ul li {
-  background-color: #ada; }
+  background-color: #eee; }
 
 .main-navigation ul ul :hover > a {
-  background-color: pink; }
+  background-color: pink;
+  padding: 6px 10px; }
 
 .main-navigation ul li:hover > ul {
   left: auto; }
@@ -458,7 +461,10 @@ a:active {
     display: block; }
 
   .main-navigation ul {
-    display: none; } }
+    display: none; }
+
+  .main-navigation ul ul {
+    display: block; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {

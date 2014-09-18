@@ -453,6 +453,7 @@ a:active {
 	background-color: #eee;
 	margin-bottom: 4em;
 	padding: 1em 0.75em;
+	position: relative;
 }
 
 .main-navigation ul {
@@ -479,7 +480,7 @@ a:active {
 	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
-	background-color: #ada;
+	background-color: #eee;
 }
 
 .main-navigation ul ul ul {
@@ -489,11 +490,13 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
-	background-color: #dad;
+	/* background-color: #dad; */
+	padding: 6px 10px;
 }
 
 .main-navigation ul ul li {
-							background-color: #ada;
+							background-color: #eee;
+							
 
 }
 
@@ -502,6 +505,7 @@ a:active {
 
 .main-navigation ul ul :hover > a {
 									background-color: pink;
+									padding: 6px 10px;
 }
 
 .main-navigation ul ul a:hover {
@@ -509,6 +513,7 @@ a:active {
 
 .main-navigation ul li:hover > ul {
 	left: auto;
+	
 }
 
 .main-navigation ul ul li:hover > ul {
@@ -533,6 +538,11 @@ a:active {
 	.main-navigation ul {
 		display: none;
 	}
+
+	.main-navigation ul ul {
+		display: block;
+	}
+
 }
 
 .site-main .comment-navigation,
