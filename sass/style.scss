@@ -445,15 +445,19 @@ a:active {
 /*--------------------------------------------------------------
 5.2 =Menus
 --------------------------------------------------------------*/
-#menu-menu-1{
-    list-style:none;
-    font-weight:normal;
-    margin-top:50px;
-    float:left;
-    /* width:100% */;
-    position:relative;
-    z-index:5;
+
+nav.main-navigation	{
+					background-color: #1d1d1d;
+					min-height: 6em;
 }
+#menu-menu-1{
+			list-style:none;
+			font-weight:normal;
+			float:left;
+			width:100% ;
+			position:relative;
+			/* z-index:5; */
+			}
 #menu-menu-1 li{
     float:left;
     margin-right:10px;
@@ -473,7 +477,7 @@ a:active {
 }
 
 /*--- DROPDOWN ---*/
-#main-navigation ul{
+#menu-menu-1 ul{
     background:#F3EFE2;/* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
     background:rgba(255,255,255,0);/* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
     list-style:none;
@@ -481,17 +485,17 @@ a:active {
     position:absolute;
     left:-9999px;/* Hide off-screen when not needed (this is more accessible than display:none;) */
 }
-#main-navigation ul li{
+#menu-menu-1 ul li{
     padding-top:1px;    /* Introducing a padding between the li and the a give the illusion spaced items */
     float:none;
 }
-#main-navigation ul {
+#menu-menu-1 ul {
     white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 }
-#main-navigation li:hover ul{
+#menu-menu-1 li:hover ul{
     left:0; /* Bring back on-screen when needed */
 }
-#main-navigation li:hover a { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+#menu-menu-1 li:hover a { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
     background:#ccc;
     text-decoration:underline;
     -webkit-transition: all 0.4s ease-in-out;
@@ -499,36 +503,32 @@ a:active {
               -o-transition: all 0.4s ease-in-out;
               transition: all 0.4s ease-in-out;
 }
-#main-navigation li:hover ul a{
+#menu-menu-1 li:hover ul a{
     text-decoration:underline;
 }
-#main-navigation li:hover ul li a:hover{
+#menu-menu-1 li:hover ul li a:hover{
     background:#ccc;
 }
 
-#main-navigation ul li{
+#menu-menu-1 ul li{
     padding-top:1px;
     float:none;
 }
-#main-navigation ul a{
+#menu-menu-1 ul a{
     white-space:nowrap;
 }
-#main-navigation li:hover ul{
+#menu-menu-1 li:hover ul{
     left:0;
 }
 
-#main-navigation li:hover a{
+#menu-menu-1 li:hover a{
     background:#ccc;
     text-decoration:underline;
 }
 
-#main-navigation li:hover ul li a:hover{
+#menu-menu-1 li:hover ul li a:hover{
     background:#F3EFE2;
 }
-
-
-
-
 
 
 /* Small menu */
@@ -908,9 +908,7 @@ object {
 
 /* =Mobile styles	*/
 
-/* body	{ */
-/* 		margin: 0 12px; */
-/* } */
+
 
 .site-header	{
 				text-align: center;
@@ -926,15 +924,6 @@ object {
 				margin-top: 2em;
 }
 
-.grid {
-		background: gray;
-		margin: 0 0 0 0;
-		@extend .clearfix; 
-		padding-left: 0;
-}
-
-
-
 
 /* removes padding left for mobile */
 
@@ -949,7 +938,7 @@ object {
  
 @media only screen and (min-width: 480px) /* 30em */{
  
- 
+	 
  
  
 }
@@ -962,6 +951,8 @@ body	{
  		/* width:80%; */  
  		margin: 0 auto; 
  	} 
+
+
 }
  
  
